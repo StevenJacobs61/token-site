@@ -8,8 +8,10 @@ const Hero = () => {
         <div className={styles.img__container}>
               <img src={Logo} alt="btc logo" className={styles.logo} />
         </div>
-        <div>
-          <button>{import.meta.env.VITE_STAGE === "PRE" ? "Presale" : "BUY BTV"}</button>
+        <div className={styles.button__container}>
+          <button className={`btn--full ${styles.button}`}>trade</button>
+          <button className={`btn--full ${styles.button}`}>Chat</button>
+          <button className={`btn--full ${styles.button}`}>Play</button>
         </div>
       </div>
   )

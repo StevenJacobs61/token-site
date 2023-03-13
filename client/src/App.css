@@ -8,12 +8,30 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 :root{
   --color-grey: rgb(71, 70, 70);
   --color-base: rgb(243,168,60);
   --color-secondary: rgb(251,234,171);
   --color-lgrey: #656565;
+}
+/* Buttons */
+
+.btn--full{
+  background-color: var(--color-base);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--color-grey);
+  cursor: pointer; 
+  transition: all 0.2s ease-in;
+}
+.btn--full:hover{
+  color: var(--color-base);
+  background-color: transparent;
 }
 
 

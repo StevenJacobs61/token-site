@@ -1,0 +1,28 @@
+.container{
+    width: 100%;
+    height: 40vh;
+    padding: 1rem;
+    position: relative;
+}
+.button__back, .button__forward{
+    position: absolute;
+    color: #fff;
+    opacity: 0.4;
+    width: 4rem;
+    height: unset;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.button__back:hover, .button__forward:hover{
+    opacity: 0.8;
+}
+.button__back{
+    left: -5%;
+    top: 12%;
+    transform: rotate(180deg);
+}
+.button__forward{
+    right: -5%;
+    top: 12%;
+}

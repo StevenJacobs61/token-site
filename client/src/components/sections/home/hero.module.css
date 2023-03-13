@@ -16,6 +16,24 @@
     height: auto;
     padding:  0.5rem;
 }
+
+/* Buttons */
+
+.button__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+.button {
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 5.5vw;
+    box-shadow: 0 0 10px 2px var(--color-lgrey);
+}
+
+/* Animation */
+
 @keyframes fade-in-img {
     from{
         opacity: 0%;
@@ -34,6 +52,9 @@
         background-color: rgb(71, 70, 70, 0.7);
     }
 }
+
+/* Media queries */
+
 @media screen and (max-width:1200px){
     .logo{
         width: 40vw;
