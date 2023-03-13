@@ -1,0 +1,74 @@
+.section{
+        height: 4rem;
+        width: 100vw;
+        background-color: var(--color-grey);
+        border: 2px solid var(--color-lgrey);
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 999;
+}
+.cont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.item{
+    color: var(--color-base);
+    font-family: 'Tilt Prism', Helvetica, sans-serif;
+    font-size: 2.5vw;
+    border-top: 2px solid #656565;
+    border-right: 2px solid #656565;
+    border-left: 2px solid #656565;
+    padding: 0 0.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.2s;
+    animation: fade-in 2s ease-out;
+    opacity: 0.7;
+    text-align: center;
+
+}
+.item:hover{
+    opacity: 0.9;
+}
+@keyframes fade-in{
+    from{
+        opacity: 0
+    }
+    to{
+        opacity: 0.7;
+    }
+}
+@media screen and (max-width:1024px){
+    .item{
+        font-size: 3.2vw;
+    }
+}
+@media screen and (max-width:769px){
+    .item{
+        font-size: 4.2vw;
+    }
+    .section{
+        height: 3.2rem;
+    }
+}
+@media screen and (max-width:480px){
+    .section{
+        height: fit-content;
+    }
+    .item{
+        border: 2px solid transparent;
+    }
+    .cont>*:not(:last-child){
+        border-right: 2px solid var(--color-lgrey);
+    }
+}
+@media screen and (max-width:380px){
+    .item{
+        font-size: 3.5vw;
+    }
+}
