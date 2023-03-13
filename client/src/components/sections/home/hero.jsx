@@ -9,7 +9,7 @@ const Hero = () => {
               <img src={Logo} alt="btc logo" className={styles.logo} />
         </div>
         <div>
-          <button>{import.meta.env.STAGE === "PRE" ? "Presale" : "BUY BTV"}</button>
+          <button>{import.meta.env.VITE_STAGE === "PRE" ? "Presale" : "BUY BTV"}</button>
         </div>
       </div>
   )
