@@ -15,7 +15,6 @@ const Navbar = () => {
     function handleStyle(){
       if(location.pathname === "/"){
         headers.map((header) => {
-          console.log(header.current.textContent);
           if(header.current.textContent !== "Home"){
             header.current.style.opacity = "0.7"
           } else {

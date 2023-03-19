@@ -7,10 +7,37 @@
     align-items: center;
 }
 .info__container{
-    width: 70%;
-    height: 100%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0.5rem 0;
+    margin: 1rem 0 0;
+    border-radius: 7px;
+    padding: 0.3rem 1rem 1rem;
+}
+@media screen and (max-width:1024px){
+    .info__container{
+        margin: 0;
+    }
+}
+@media screen and (max-width:769px){
+    .info__container{
+        width: 75%;
+    }
+}
+@media screen and (max-width:480px){
+    .info__container{
+        margin: 1vh 0 0;
+    }
+    .section{
+        padding: 3rem 0 0;
+    }
+}
+@media screen and (max-width:380px){
+    .info__container{
+        margin: 0.5rem 0 0;
+    }
+    .section{
+        padding: 2.5rem 0 0;
+    }
 }

@@ -1,28 +1,89 @@
 .container{
     width: 100%;
-    height: 40vh;
+    height: 47vh;
     padding: 1rem;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 .button__back, .button__forward{
     position: absolute;
-    color: #fff;
-    opacity: 0.4;
+    color: #797777;
+    opacity: 1;
     width: 4rem;
     height: unset;
     aspect-ratio: 1/1;
     cursor: pointer;
-    transition: all 0.2s ease-in;
+    transition: all 0.15s ease-in;
 }
 .button__back:hover, .button__forward:hover{
-    opacity: 0.8;
+    color: #aeabab;
 }
+    
 .button__back{
-    left: -5%;
-    top: 12%;
+    left:5%;
+    top: 10%;
     transform: rotate(180deg);
 }
 .button__forward{
-    right: -5%;
-    top: 12%;
+    right: 5%;
+    top: 10%;
+}
+@media screen and (max-width:1200px){
+    .button__back, .button__forward{
+        width: 3rem;
+    }
+    .button__back{
+        left: 3%;
+    }
+    .button__forward{
+        right: 3%;
+    }
+}
+@media screen and (max-width:1024px){
+    .button__back, .button__forward{
+        width: 3rem;
+        top: 15%;
+    }
+    .button__back{
+        left: 6%;
+    }
+    .button__forward{
+        right: 6%;
+    }
+}
+@media screen and (max-width:769px){
+    .container{
+        padding: 0 1rem 1rem;
+    }
+}
+@media screen and (max-width:480px){
+    .button__back{
+        top: 9%;
+        width: 2.4rem;
+        left: 0%;
+    }
+    .button__forward{
+        top: 9%;
+        width: 2.5rem;
+        right: 0%;
+    }
+    .container{
+        height: auto;
+    }
+}
+@media screen and (max-width:380px){
+    .button__back{
+        top: 8%;
+        width: 2.2rem;
+        left: 0%;
+    }
+    .button__forward{
+        top: 8%;
+        width: 2.2rem;
+        right: 0%;
+    }
+    .container{
+        height: auto;
+    }
 }

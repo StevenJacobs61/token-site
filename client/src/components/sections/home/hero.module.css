@@ -57,19 +57,29 @@
 
 @media screen and (max-width:1200px){
     .logo{
-        width: 40vw;
+        width: 30vw;
     }
 }
 @media screen and (max-width:1024px){
     .logo{
-        width: 45vw;
+        width: 35vw;
     }
 }
 @media screen and (max-width:769px){
     .logo{
-        width: 55vw;
+        width: 37vw;
     }
     .img__container{
-        margin: 1rem 0 0;
+        margin: 1.5rem 0 2rem;
+    }
+}
+@media screen and (max-width:480px){
+    .button{
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: unset;
+    }
+    .img__container{
+        margin: 0rem 0 1.5rem;
     }
 }

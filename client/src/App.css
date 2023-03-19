@@ -33,6 +33,11 @@ body {
   color: var(--color-base);
   background-color: transparent;
 }
+@media screen and (max-width:769px){
+  .btn--full{
+    padding: 0.4rem;
+  }
+}
 
 
 
