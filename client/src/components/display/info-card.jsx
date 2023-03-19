@@ -1,18 +1,19 @@
 import React from 'react'
 import styles from './info-card.module.css'
-import { GiChart } from 'react-icons/gi'
 
-const InfoCard = () => {
+const InfoCard = ({header, icon, text}) => {
+  const Icon = icon
+
+
   return (
     <div className={styles.container}>
-        <GiChart className={styles.icon}/>
-         <h1 className={styles.header}>DTV Token</h1>
-         <ol>
-            <li className={styles.text}>Auto-Buyback feature</li>
-            <li className={styles.text}>Auto-Buyback feature</li>
-            <li className={styles.text}>Auto-Buyback feature</li>
-            <li className={styles.text}>Auto-Buyback feature</li>
-         </ol>
+        <span className={styles.icon__container}>
+          <Icon className={styles.icon}/>
+        </span>
+         <h1 className={styles.header}>{header}</h1>
+         {text.map((item, index) => 
+           <li key={index} className={styles.text}>{item}</li>
+         )}
     </div>
   )
 }
