@@ -1,7 +1,6 @@
 .section{
     width: 100%;
     height: auto;
-    padding: 4rem 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,15 +28,9 @@
     .info__container{
         margin: 1vh 0 0;
     }
-    .section{
-        padding: 3rem 0 0;
-    }
 }
 @media screen and (max-width:380px){
     .info__container{
         margin: 0.5rem 0 0;
-    }
-    .section{
-        padding: 2.5rem 0 0;
     }
 }

@@ -1,0 +1,59 @@
+.container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: 1px solid var(--color-lgrey);
+ padding: 0.2rem 1rem 0.5rem;
+ border-radius: 3px;
+ background-color: var(--bg-grey);
+ flex-direction: column;
+}
+.container__header{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+.header{
+    font-size: 1.7rem;
+    color: var(--color-secondary);
+    font-weight: 300;
+    opacity: 0.6;
+}
+.loading{
+    color: var(--color-lgrey);
+
+}
+.price{
+    color: var(--color-base);
+    font-weight: 350;
+    margin: 0 0 0.7rem;
+}
+.daily__container{
+    width: 90%;
+}
+.label{
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: var(--color-secondary);
+    margin: 0 0 0.1rem;
+    width: 90%;
+}
+.high, .low{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0 0 0.3rem;
+}
+.high{
+    color: #0fb300;
+}
+.low{
+    color: #da0707;
+}
+.icon__btc{
+    fill: #ff5e00;
+    width: 2rem;
+    height: inherit;
+    transform: rotate(7deg);
+}

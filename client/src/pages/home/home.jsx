@@ -23,7 +23,6 @@ const Home = () => {
       }
     }
   }
-  console.log(count);
 
   return (
     <div className={styles.section}>

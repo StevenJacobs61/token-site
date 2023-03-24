@@ -15,6 +15,7 @@ body {
   --color-base: rgb(243,168,60);
   --color-secondary: rgb(251,234,171);
   --color-lgrey: #656565;
+  --bg-grey: rgb(71, 70, 70, 0.7)
 }
 /* Buttons */
 
